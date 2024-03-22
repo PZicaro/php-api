@@ -1,8 +1,4 @@
 <?php
-$db_user = 'root';
-$db_host ='localhost';
-$db_name = 'devnotes';
-$db_pass = '';
-
+require('./var.php');
 $pdo = new PDO("mysql:dbname=$db_name;host=$db_host", $db_user, $db_pass);
 $array = [];
